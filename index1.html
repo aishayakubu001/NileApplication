@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style >
+		body 
+		{
+			background-image: url("images/nile.png"); 
+			background-repeat: no-repeat;
+		}
+	</style>	
+ <title>Nile Application Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+  <h2>Application form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="firstname">FIRST NAME:</label>
+      <input type="firstname" class="form-control" id="firstname" placeholder="Enter firstname" name="firstname" required="">
+    </div>
+    <div class="form-group">
+      <label for="lastname">LAST NAME:</label>
+      <input type="lastname" class="form-control" id="lastname" placeholder="Enter lastname" name="lastname" required="">
+    </div>
+    <div class="form-group">
+      <label for="Schoolname">SCHOOL:</label>
+      <input type="Schoolname" class="form-control" id="Schoolname" placeholder="Enter Schoolname" name="Schoolname">
+    </div>
+    <div>
+    	<label for="State">STATE OF ORIGIN:</label>
+        <div class="dropdown">
+		    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		      Select State
+		    </button><br><br>
+		    <div class="dropdown-menu">
+		      <a class="dropdown-item" href="#">Kano</a>
+		      <a class="dropdown-item" href="#">Kaduna</a>
+		      <a class="dropdown-item" href="#">Abuja</a>
+		      <a class="dropdown-item" href="#">Sokoto</a>
+		      <a class="dropdown-item" href="#">Bauchi</a>
+		    </div>
+        </div>
+    </div> 
+    GENDER:
+		<input type="radio" name="gender" placeholder="male" checked> Male
+ 		<input type="radio" name="gender" placeholder="female"> Female<br><br>
+ 	PHONE:<input type="number" placeholder="+234" required="NAME" pattern="08156056958"><br><br>
+ 	EMAIL:<input type="EMAIL" placeholder="example@me.com" pattern="+@gmail.com" size="30"><br><br>
+ 	JAMB: <br><br>
+ 	<input type="text" placeholder="subject"> <input type="number" placeholder="score"><br>
+	<input type="text" placeholder="subject"> <input type="number" placeholder="score"><br>
+	<input type="text" placeholder="subject"> <input type="number" placeholder="score"><br>
+	<input type="text" placeholder="subject"> <input type="number" placeholder="score"><br><br>
+	WAEC:<br><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br>
+	<input type="text" placeholder="subject"> <input type="text" placeholder="grade"><br><br>
+	<div>
+    	<label for="Choice">FIRST CHOICE:</label>
+        <div class="dropdown">
+		    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		      Select first choice
+		    </button>
+		    <div class="dropdown-menu">
+		      <a class="dropdown-item" href="#">Computer Science</a>
+		      <a class="dropdown-item" href="#">Law</a>
+		      <a class="dropdown-item" href="#">Medicine</a>
+		      <a class="dropdown-item" href="#">Computer Architechture</a>
+		      <a class="dropdown-item" href="#">Bio-Chemistry</a>
+		      <a class="dropdown-item" href="#">Biology</a>
+		    </div>
+        </div>
+    </div> 
+    	<div>
+    	<label for="Choice">SECOND CHOICE:</label>
+        <div class="dropdown">
+		    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+		      Select second choice
+		    </button><br><br>
+		    <div class="dropdown-menu">
+		      <a class="dropdown-item" href="#">Computer Science</a>
+		      <a class="dropdown-item" href="#">Law</a>
+		      <a class="dropdown-item" href="#">Medicine</a>
+		      <a class="dropdown-item" href="#">Computer Architechture</a>
+		      <a class="dropdown-item" href="#">Bio-Chemistry</a>
+		      <a class="dropdown-item" href="#">Biology</a>
+		    </div>
+        </div>
+    </div> 
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+</html>
